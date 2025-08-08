@@ -1,0 +1,17 @@
+[
+  { "name": "ci/cd", "color": "1D76DB", "description": "CI/CD workflows, automation, or GitHub Actions-related work" },
+  { "name": "infra", "color": "5319E7", "description": "Infrastructure as Code, Terraform, AWS setup" },
+  { "name": "security", "color": "B60205", "description": "Auth, encryption, or secure data handling" },
+  { "name": "performance", "color": "0052CC", "description": "Speed, efficiency, or scaling improvements" },
+  { "name": "refactor", "color": "D4C5F9", "description": "Code cleanup or structural changes" },
+  { "name": "blocked", "color": "E11D21", "description": "This issue is blocked by another" },
+  { "name": "design", "color": "F9D0C4", "description": "Architectural or structural planning" },
+  { "name": "cli", "color": "FBCA04", "description": "Command-line interface related tasks" },
+  { "name": "backend", "color": "C2E0C6", "description": "Core backend logic or integrations" },
+  { "name": "testing", "color": "F7C6C7", "description": "Unit, integration, or BDD testing" },
+  { "name": "priority: high", "color": "B60205", "description": "Urgent tasks that unblock progress or are time-sensitive" },
+  { "name": "priority: medium", "color": "FBCA04", "description": "Important but not blocking tasks" },
+  { "name": "priority: low", "color": "C5DEF5", "description": "Nice-to-haves or low-risk, non-blocking tasks" },
+  { "name": "optional", "color": "D4E157", "description": "Non-critical or stretch goal features" },
+  { "name": "discussion", "color": "6A737D", "description": "Requires input or brainstorming before proceeding" }
+]
