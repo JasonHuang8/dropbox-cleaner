@@ -14,7 +14,7 @@ CleanDrop is modular and enterprise‑friendly from day one:
 ## Quickstart
 
 ```bash
-python3.11 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
