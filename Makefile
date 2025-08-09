@@ -33,7 +33,7 @@ env:
 	@echo "Loaded environment variables from .env"
 
 copy-env:
-	@if [ ! -f .env ]; then cp .env.example .env && echo ".env file created from .env.example"; fi
+	@if [ ! -f .env ]; then cp .env.example .env && echo ".env file created from .env.example"; else echo ".env already exists"; fi
 
 ## 🆘 Help
 help:
