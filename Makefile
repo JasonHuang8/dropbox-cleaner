@@ -6,7 +6,7 @@ ifneq (,$(wildcard .env))
 	export $(shell sed 's/=.*//' .env)
 endif
 
-.PHONY: install labels test lint clean env help
+.PHONY: install labels test lint clean env copy-env help
 
 ## 🛠️ Setup and Dependencies
 install:
@@ -32,6 +32,9 @@ clean:
 env:
 	@echo "Loaded environment variables from .env"
 
+copy-env:
+	@if [ ! -f .env ]; then cp .env.example .env && echo ".env file created from .env.example"; fi
+
 ## 🆘 Help
 help:
 	@echo "Makefile commands:"
@@ -40,3 +43,4 @@ help:
 	@echo "  make test        - Run tests"
 	@echo "  make lint        - Run flake8 lint checks"
 	@echo "  make clean       - Clean up cache files"
+	@echo "  make copy-env    - Create a local .env from .env.example"
